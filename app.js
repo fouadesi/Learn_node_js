@@ -36,10 +36,11 @@ app.use('/home', (req,res,next)=> {
         if(err) {
             console.log("error in selecting data from",err)
         }else {
-            console.log(result.length)
+            console.log(result.length);
+            res.send(result.length.toString());
         }
     })
-res.send("hello cv chwiya");
+
 }); 
 app.use('/signup', (req,res,next)=> {
     res.render(path.join(__dirname,'./','views','/','ejs/',
