@@ -13,7 +13,7 @@ const db = mysql.createConnection({
     password : '61e5ad9e',
     database : 'heroku_42b88a2c1536c29', 
 })
-
+console.log("wayli wayli");
 db.connect((err,connection)=> {
     if(err) {
         console.log(err)
