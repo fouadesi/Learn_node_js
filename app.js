@@ -37,7 +37,7 @@ app.use('/home', (req,res,next)=> {
             console.log("error in selecting data from",err)
         }else {
             console.log(result.length);
-            res.send(result.length.toString());
+            res.send(result[0].name);
         }
     })
 
