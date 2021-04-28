@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("app engine","ejs"); 
 app.set('views','views/ejs');    
 app.use('/home', (req,res,next)=> {
-res.send("hello world");
+res.send("hello cv chwiya");
 }); 
 app.use('/signup', (req,res,next)=> {
     res.render(path.join(__dirname,'./','views','/','ejs/',
