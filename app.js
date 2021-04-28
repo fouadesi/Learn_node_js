@@ -18,7 +18,7 @@ db.connect((err,connection)=> {
     if(err) {
         console.log(err)
     }else {
-        console.log("connection created succefully")
+        console.log("connection created succefullyyyyyyyyy")
     }
 })
 
