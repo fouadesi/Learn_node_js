@@ -23,12 +23,22 @@ db.connect((err,connection)=> {
 });
 const bodyParser = require('body-parser');
 
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.set("app engine","ejs"); 
 app.set('views','views/ejs');    
 app.use('/home', (req,res,next)=> {
+
+    db.query("SELECT * FROM test ",(err,result)=> {
+        if(err) {
+            console.log("error in selecting data from",err)
+        }else {
+            console.log(result.length)
+        }
+    })
 res.send("hello cv chwiya");
 }); 
 app.use('/signup', (req,res,next)=> {
