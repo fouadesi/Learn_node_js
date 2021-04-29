@@ -8,10 +8,10 @@ const nodemailer = require("nodemailer");
 const mysql = require('mysql');
 
 const db = mysql.createConnection({
-    host : "eu-cdbr-west-01.cleardb.com", 
-    user : 'bd1e6c3b5f3d3a', 
-    password : '61e5ad9e',
-    database : 'heroku_42b88a2c1536c29', 
+    host : "34.72.148.89", 
+    user : 'root', 
+    password : '12345678',
+    database : 'hygeiadb', 
 })
 console.log("wayli wayli");
 db.connect((err,connection)=> {
